@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ISpy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ypq-0G-ll4">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tür-achern1" translatesAutoresizingMaskIntoConstraints="NO" id="uFj-yJ-EVS">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="810"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="810" id="pXx-G3-vFj"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="uFj-yJ-EVS" firstAttribute="top" secondItem="Ypq-0G-ll4" secondAttribute="top" id="05K-yG-Jrz"/>
+                                    <constraint firstItem="uFj-yJ-EVS" firstAttribute="bottom" secondItem="Ypq-0G-ll4" secondAttribute="bottomMargin" id="AIY-Qm-rrG"/>
+                                    <constraint firstItem="uFj-yJ-EVS" firstAttribute="leading" secondItem="Ypq-0G-ll4" secondAttribute="leading" id="cdL-2J-zPb"/>
+                                    <constraint firstItem="uFj-yJ-EVS" firstAttribute="centerX" secondItem="Ypq-0G-ll4" secondAttribute="centerX" id="nap-OF-4sC"/>
+                                    <constraint firstAttribute="trailing" secondItem="uFj-yJ-EVS" secondAttribute="trailing" constant="9.0949470177292824e-13" id="oEo-Fe-OWM"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ypq-0G-ll4" secondAttribute="trailing" id="EBi-aZ-wmP"/>
+                            <constraint firstItem="Ypq-0G-ll4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FDW-Fd-vXG"/>
+                            <constraint firstItem="Ypq-0G-ll4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HlY-z7-MCa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ypq-0G-ll4" secondAttribute="bottom" id="Jo2-qE-xM1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="uFj-yJ-EVS" id="tc5-6U-nOT"/>
+                        <outlet property="scrollViewView" destination="Ypq-0G-ll4" id="urw-iO-xUM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tür-achern1" width="3458" height="8617"/>
+    </resources>
+</document>
