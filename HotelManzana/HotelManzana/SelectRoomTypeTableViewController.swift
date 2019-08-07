@@ -54,6 +54,7 @@ class SelectRoomTypeTableViewController: UITableViewController {
         delegate?.didSelect(roomType: roomType!)
         tableView.reloadData()
         
+
     }
 
     /*
