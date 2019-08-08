@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Contest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your email!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMu-J3-aZH">
+                                <rect key="frame" x="59.666666666666657" y="150" width="255.99999999999997" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NLl-D8-yhV">
+                                <rect key="frame" x="20" y="391" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uS8-Gu-Yq9">
+                                <rect key="frame" x="157.66666666666666" y="456" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="QGq-Pi-m3q"/>
+                                    <constraint firstAttribute="height" constant="60" id="qGm-13-0qA"/>
+                                </constraints>
+                                <state key="normal" title="submit"/>
+                                <connections>
+                                    <action selector="submitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C5h-OL-NOC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NMu-J3-aZH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="74L-3v-CZS"/>
+                            <constraint firstItem="NLl-D8-yhV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BnH-mD-qse"/>
+                            <constraint firstItem="uS8-Gu-Yq9" firstAttribute="top" secondItem="NLl-D8-yhV" secondAttribute="bottom" constant="35" id="KRb-uE-R1B"/>
+                            <constraint firstItem="NMu-J3-aZH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="106" id="Xma-GU-6fe"/>
+                            <constraint firstItem="uS8-Gu-Yq9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dxu-8h-8AC"/>
+                            <constraint firstItem="NLl-D8-yhV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="f85-y8-1jA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NLl-D8-yhV" secondAttribute="trailing" constant="20" id="pvP-ni-JNO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="NLl-D8-yhV" id="6Ok-XG-8XK"/>
+                        <segue destination="l0L-Pg-ncd" kind="show" identifier="submitSegue" id="N6J-N9-Rue"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="137.4384236453202"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XLb-cc-eBH">
+            <objects>
+                <viewController id="l0L-Pg-ncd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6ER-ya-LBE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You successfully enrolled in the contest" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTG-Jp-W6u">
+                                <rect key="frame" x="20" y="283" width="335" height="95"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uTG-Jp-W6u" firstAttribute="top" secondItem="5m7-1M-LDf" secondAttribute="top" constant="239" id="37y-lk-fq4"/>
+                            <constraint firstItem="uTG-Jp-W6u" firstAttribute="centerX" secondItem="6ER-ya-LBE" secondAttribute="centerX" id="528-tq-tgu"/>
+                            <constraint firstItem="uTG-Jp-W6u" firstAttribute="leading" secondItem="5m7-1M-LDf" secondAttribute="leading" constant="20" id="doL-vo-eLi"/>
+                            <constraint firstAttribute="trailing" secondItem="uTG-Jp-W6u" secondAttribute="trailing" constant="20" id="eOO-vf-R42"/>
+                            <constraint firstItem="5m7-1M-LDf" firstAttribute="bottom" secondItem="uTG-Jp-W6u" secondAttribute="bottom" constant="400" id="rVS-Ed-NAT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5m7-1M-LDf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BbJ-ZF-wJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1008.8" y="148.52216748768473"/>
+        </scene>
+    </scenes>
+</document>
